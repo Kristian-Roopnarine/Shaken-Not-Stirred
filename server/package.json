@@ -1,7 +1,7 @@
 {
-  "name": "google-auth",
+  "name": "shaken-not-stirred",
   "version": "1.0.0",
-  "description": "A starter template for NodeJS projects that implement google auth.",
+  "description": "Tinder for cocktails",
   "main": "index.js",
   "scripts": {
     "test": "jest --detectOpenHandles --verbose",

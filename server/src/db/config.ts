@@ -9,13 +9,13 @@ interface AppEnvironment {
 }
 const dev: AppEnvironment = {
   TABLE_NAMES: {
-    users: 'google_auth.users',
+    users: 'dev.users',
   },
 };
 
 const test: AppEnvironment = {
   TABLE_NAMES: {
-    users: 'google_auth_test.users',
+    users: 'test.users',
   },
 };
 interface Config {

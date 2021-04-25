@@ -15,8 +15,8 @@ export async function initializeTestDatabase() {
 }
 
 export async function dropAllTestSchema() {
-  await db.query('DROP SCHEMA google_auth_test CASCADE');
-  await db.query('CREATE SCHEMA google_auth_test');
+  await db.query('DROP SCHEMA test CASCADE');
+  await db.query('CREATE SCHEMA test');
 }
 
 export async function insertTestUser(
