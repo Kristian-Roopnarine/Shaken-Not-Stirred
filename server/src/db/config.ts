@@ -10,12 +10,14 @@ interface AppEnvironment {
 const dev: AppEnvironment = {
   TABLE_NAMES: {
     users: 'dev.users',
+    matches: 'dev.user_matches',
   },
 };
 
 const test: AppEnvironment = {
   TABLE_NAMES: {
     users: 'test.users',
+    matches: 'test.user_matches',
   },
 };
 interface Config {

@@ -11,6 +11,12 @@ const main = async () => {
 			last_name VARCHAR(50),
 			email VARCHAR(50) NOT NULL
 	);`);
+  await db.query(`CREATE TABLE ${config.TABLE_NAMES.matches}(
+			id SERIAL PRIMARY KEY,
+			user_id UUID REFERENCES ${config.TABLE_NAMES.users}(id),
+			drink_id INTEGER NOT NULL,
+      drink_name VARCHAR(75) NOT NULL
+	);`);
 	*/
   server.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
