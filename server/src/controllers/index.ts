@@ -1,3 +1,4 @@
 import * as authControllers from './auth';
+import * as matchesControllers from './matches';
 
-export { authControllers };
+export { authControllers, matchesControllers };
